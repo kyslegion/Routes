@@ -6,6 +6,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
+//l
 
 // index page
 app.get('/', function(req, res) {
