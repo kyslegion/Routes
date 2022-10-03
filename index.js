@@ -11,7 +11,8 @@ app.listen(port,()=>{
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname+ '/'));
-app.use(express.static(__dirname+ '/views'));
+app.use(express.static(__dirname+ '/style/background/'));
+// app.use(express.static(__dirname+ '/views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 
