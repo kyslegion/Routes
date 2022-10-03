@@ -26,11 +26,11 @@ app.set('view engine', 'ejs');
 // });
 app.get('/',(req,res)=>{
   // res.sendFile(path.join(__dirname, './connexion.html'));
-  res.render('index.ejs');
+  res.render('views/index.ejs');
 });
 // about page
 app.get('/catalogue', function(req, res) {
-  res.render('catalogue.ejs');
+  res.render('views/catalogue.ejs');
   // res.sendFile(path.join(__dirname, './zobi.html'));
 });
 // app.listen('3000',()=>{
