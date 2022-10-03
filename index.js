@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-// app.set('views', path.join(__dirname, '../views'))
+app.set('views', path.join(__dirname, '/views'))
 // use res.render to load up an ejs view file
 //l
 
@@ -34,9 +34,9 @@ app.get('/catalogue', function(req, res) {
   // res.render('views/catalogue.ejs');
   res.sendFile(path.join(__dirname, './zobi.html'));
 });
-app.get('/zaba', function(req, res) {
-  // res.render('views/catalogue.ejs');
-  res.sendFile('zaba.html');
+app.get('/ejs', function(req, res) {
+  res.render('index');
+  // res.sendFile('index');
 });
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
