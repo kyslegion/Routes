@@ -35,3 +35,4 @@ app.get('/catalogue', function(req, res) {
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
 // })
+module.exports=app
