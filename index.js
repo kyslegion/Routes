@@ -30,10 +30,10 @@ app.get('/',(req,res)=>{
   // res.render('views/index.ejs');
 });
 // about page
-app.get('/catalogue', function(req, res) {
-  // res.render('views/catalogue.ejs');
-  res.sendFile(path.join(__dirname, './zobi.html'));
-});
+// app.get('/catalogue', function(req, res) {
+//   // res.render('views/catalogue.ejs');
+//   res.sendFile(path.join(__dirname, './zobi.html'));
+// });
 app.get('/ejs', function(req, res) {
   res.render('index');
   // res.sendFile('index');
@@ -41,4 +41,4 @@ app.get('/ejs', function(req, res) {
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
 // })
-module.exports=app
+// module.exports=app
