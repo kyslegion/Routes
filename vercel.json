@@ -11,6 +11,11 @@
     "source": "/catalogue",
     "destination": "catalogue.ejs", 
     "permanent": true
+  },
+  { 
+    "source": "/cat",
+    "destination": "zobi.html", 
+    "permanent": true
   }
 ]
 }
