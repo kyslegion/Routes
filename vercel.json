@@ -1,8 +1,28 @@
 {
-  "routes": [
+  "version": 2,
+  "builds": [
     {
-      "src": "/(.*)",
-      "dest": "/index.js"
+      "src": "package.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["./.nuxt/dist/sitemap-routes.json"],
+        "generateStaticRoutes": true
+      }
+    }
+  ],
+  "headers": [
+    {
+      "source": "/news(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=43200, stale-while-revalidate"
+        }
+      ]
     }
   ]
 }
