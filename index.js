@@ -26,16 +26,16 @@ app.set('views', path.join(__dirname, '/views'))
 // app.get('/', function(req, res) {
 //   res.render('index.ejs');
 // });
-app.get('/',(req,res)=>{
-  res.sendFile(path.join(__dirname, './connexion.html'));
-  // res.render('views/index.ejs');
-});
+// app.get('/',(req,res)=>{
+//   res.sendFile(path.join(__dirname, './connexion.html'));
+//   // res.render('views/index.ejs');
+// });
 // about page
 // app.get('/catalogue', function(req, res) {
 //   // res.render('views/catalogue.ejs');
 //   res.sendFile(path.join(__dirname, './zobi.html'));
 // });
-app.get('/ejs', function(req, res) {
+app.get('/', function(req, res) {
   res.render('index');
   // res.sendFile('index');
 });
