@@ -11,6 +11,8 @@ app.listen(port,()=>{
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname+ '/'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: false }));
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
