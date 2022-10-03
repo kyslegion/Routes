@@ -17,6 +17,10 @@ app.get('/', function(req, res) {
 app.get('/catalogue', function(req, res) {
   res.render('catalogue.ejs');
 });
-app.listen('3000',()=>{
-    console.log("Serveur 3000");
-})
+// app.listen('3000',()=>{
+//     console.log("Serveur 3000");
+// })
+let port=4000;
+app.listen(port, '0.0.0.0',()=>{
+  console.log(port);
+});
