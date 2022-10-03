@@ -36,7 +36,7 @@ app.get('/catalogue', function(req, res) {
 });
 app.get('/zaba', function(req, res) {
   // res.render('views/catalogue.ejs');
-  res.sendFile(path.join(__dirname, './zaba.html'));
+  res.sendFile('zaba.html');
 });
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
