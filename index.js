@@ -25,13 +25,13 @@ app.set('view engine', 'ejs');
 //   res.render('index.ejs');
 // });
 app.get('/',(req,res)=>{
-  // res.sendFile(path.join(__dirname, './connexion.html'));
-  res.render('views/index.ejs');
+  res.sendFile(path.join(__dirname, './connexion.html'));
+  // res.render('views/index.ejs');
 });
 // about page
 app.get('/catalogue', function(req, res) {
-  res.render('views/catalogue.ejs');
-  // res.sendFile(path.join(__dirname, './zobi.html'));
+  // res.render('views/catalogue.ejs');
+  res.sendFile(path.join(__dirname, './zobi.html'));
 });
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
