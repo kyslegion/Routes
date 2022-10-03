@@ -11,6 +11,7 @@ app.listen(port,()=>{
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname+ '/'));
+app.use(express.static(__dirname+ '/views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 
@@ -32,6 +33,10 @@ app.get('/',(req,res)=>{
 app.get('/catalogue', function(req, res) {
   // res.render('views/catalogue.ejs');
   res.sendFile(path.join(__dirname, './zobi.html'));
+});
+app.get('/zaba', function(req, res) {
+  // res.render('views/catalogue.ejs');
+  res.sendFile(path.join(__dirname, './zaba.html'));
 });
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
