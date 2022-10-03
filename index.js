@@ -21,9 +21,9 @@ app.get('/',(req,res)=>{
   res.sendFile(path.join(__dirname, './connexion.html'));
 });
 // about page
-app.get('/catalogue', function(req, res) {
-  res.render('catalogue.ejs');
-});
+// app.get('/catalogue', function(req, res) {
+//   res.render('catalogue.ejs');
+// });
 // app.listen('3000',()=>{
 //     console.log("Serveur 3000");
 // })
