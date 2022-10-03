@@ -29,7 +29,7 @@ app.get('/',(req,res)=>{
 });
 // about page
 app.get('/catalogue', function(req, res) {
-  res.render('catalogue.ejs');
+  // res.render('catalogue.ejs');
   res.sendFile(path.join(__dirname, './zobi.html'));
 });
 // app.listen('3000',()=>{
